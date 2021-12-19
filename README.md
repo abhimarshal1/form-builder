@@ -3,11 +3,11 @@
 The repo contains the source code for the json form builder. This is a playground around the POC.
 
 ## Description
-JSON Form Builder is a json based config driven form builder. The underlying UI framework is <em>Semantic UI</em>. For All the other extra attributes that you can pass through in the form fields, you can refer official semanti ui documentation : [HERE](https://react.semantic-ui.com/){:target="\_blank"}
+JSON Form Builder is a json based config driven form builder. The underlying UI framework is <em>Semantic UI</em>. For All the other extra attributes that you can pass through in the form fields, you can refer official semanti ui documentation : [HERE](https://react.semantic-ui.com/)
 
 ## Live Playground
 
-[HERE](https://json-form-builder-abhishek.netlify.app/){:target="_blank" rel="noopener"}
+https://json-form-builder-abhishek.netlify.app/
 
 ## Tech Stack
 
@@ -72,4 +72,4 @@ Start the server
 ```
 ## Author
 
-- [Abhishek Kumar Upadhyay](https://www.abhishekupadhyay.net){:target="\_blank"}
+- [Abhishek Kumar Upadhyay](https://www.abhishekupadhyay.net)

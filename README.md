@@ -1,18 +1,51 @@
-# Project Title
+# JSON Form Builder
 
 The repo contains the source code for the json form builder. This is a playground around the POC.
 
+## Description
+JSON Form Builder is a json based config driven form builder. The underlying UI framework is <em>Semantic UI</em>. For All the other extra attributes that you can pass through in the form fields, you can refer official semanti ui documentation : [HERE](https://react.semantic-ui.com/)
+
 ## Live Playground
 
+https://json-form-builder-abhishek.netlify.app/
 
 ## Tech Stack
 
 **Client:** React, Styled-Components, Semantic-UI-React
 
-## Run Locally
+## Sample Config
+```json
+{
+    "title": "Sample Form",
+    "subTitle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ipsum quidem, at voluptates in commodi eum numquam placeat sapiente incidunt",
+    "items":[
+      {
+        "key": "username",
+        "type": "string",
+        "label": "Username",
+        "placeholder": "Enter username",
+        "required":true
+      },
+      {
+       "key": "password",
+       "type": "password",
+       "label": "Password",
+       "placeholder": "Enter Password",
+       "required":true
+     },
+     {
+      "key": "dob",
+      "type": "date",
+      "label": "DOB",
+      "required":true
+     },
+    ]
+}
+```
+## Supported Form Fields:
+string, number, date, datetime, time, password, checkbox, dropdown, text and radio
 
-If you are setting this repo and if this README is broken in any way, please fix it for the next person.
-A step by step series of examples that tell you how to get a development env running
+## Run Locally
 
 Clone the project
 
@@ -37,7 +70,6 @@ Start the server
 ```bash
  npm run dev
 ```
-
 ## Author
 
-- [Abhishek Kumar Upadhyay](abhi.marshal1@gmail.com)
+- [Abhishek Kumar Upadhyay](www.abhishekupadhyay.net)

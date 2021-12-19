@@ -76,7 +76,11 @@ const Documentation = (props) => {
       <Header as="h5" className="mt-0">
         Author :{" "}
         <span>
-          <em>Abhishek Kumar Upadhyay</em>
+          <em>
+            <a href="https://www.abhishekupadhyay.net" target="_blank">
+              Abhishek Kumar Upadhyay
+            </a>
+          </em>
         </span>
       </Header>
     </StyledContainer>

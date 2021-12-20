@@ -6,5 +6,3 @@ export const IsJsonString = (str) => {
   }
   return true;
 };
-
-export const getRandomString = () => Math.random().toString(36).slice(2);

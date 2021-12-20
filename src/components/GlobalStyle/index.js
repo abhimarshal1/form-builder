@@ -1,9 +1,9 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 // Utils
-import { getSpacingClasses } from "./utils";
+import { getSpacingClasses } from './utils';
 
-const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
 :root {
   font-size: 16px;
 }

@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form shallow render & match the snapshot 1`] = `
+<Form
+  as="form"
+  id="form-mduPSC58tn"
+  onSubmit={[Function]}
+>
+  <FormInput
+    as={[Function]}
+    control={[Function]}
+    label="Username"
+    name="username"
+    onChange={[Function]}
+    placeholder="Enter username"
+    required={true}
+    type="text"
+    value=""
+  />
+  <FormInput
+    as={[Function]}
+    control={[Function]}
+    label="Password"
+    name="password"
+    onChange={[Function]}
+    placeholder="Enter Password"
+    required={true}
+    type="password"
+    value=""
+  />
+  <Button
+    as="button"
+    primary={true}
+    type="submit"
+  >
+    SUBMIT
+  </Button>
+</Form>
+`;

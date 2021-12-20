@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PlaygroundHeader shallow render & match the snapshot 1`] = `
+<styled__StyledHeader
+  className="playground-header"
+>
+  <Header
+    as="h2"
+  >
+    Playground
+  </Header>
+</styled__StyledHeader>
+`;

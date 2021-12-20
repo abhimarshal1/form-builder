@@ -1,26 +1,24 @@
-import React, { useState, useEffect } from "react";
-import { Form as SemanticForm, Button } from "semantic-ui-react";
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import { Form as SemanticForm, Button } from 'semantic-ui-react';
 
 // Helpers
-import { getComponent } from "helpers/components";
+import { getComponent } from 'helpers/components';
 
-// Utils
-import { getRandomString } from "utils/common";
-
-const randomID = `form-${getRandomString()}`;
+const randomID = 'form-mduPSC58tn';
 let initialFormValue;
 
-const Form = ({ onSubmit, items, ...props }) => {
+export var Form = function ({ onSubmit, items, ...props }) {
   const [formData, setFormData] = useState(() => {
     const initialValue = items.reduce(
-      (acc, { key }) => ({ ...acc, [key]: "" }),
-      {}
+      (acc, { key }) => ({ ...acc, [key]: '' }),
+      {},
     );
     initialFormValue = initialValue;
     return initialValue;
   });
 
-  const handleChange = (e, { name, type, value }) => {
+  const handleChange = (e, { name, value }) => {
     e.stopPropagation();
     e.persist();
 
@@ -46,12 +44,12 @@ const Form = ({ onSubmit, items, ...props }) => {
 
         const properties = {
           ...details,
-          key: key,
+          key,
           name: key,
           onChange: handleChange,
         };
 
-        if (!["date", "datetime"].includes(type)) {
+        if (!['date', 'datetime'].includes(type)) {
           properties.value = formData[key];
         }
 
@@ -62,6 +60,11 @@ const Form = ({ onSubmit, items, ...props }) => {
       </Button>
     </SemanticForm>
   );
+};
+
+Form.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
+  items: PropTypes.array.isRequired,
 };
 
 export default Form;
